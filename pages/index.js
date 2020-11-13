@@ -39,7 +39,7 @@ export default function Home ( { allPostsData } ) {
               </Link>
               <br />
               <small className={ utilStyles.lightText }>
-                <PostDate dateString={ date } />
+                <PostDate datestring={ date } />
               </small>
             </li>
           ) ) }
