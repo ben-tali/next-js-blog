@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import PostDate from "../components/date";
 import Layout, { siteTitle } from '../components/Layout';
 import { getSortedPostsData } from "../lib/posts";
 import utilStyles from "../styles/utils.module.css";
@@ -38,7 +39,7 @@ export default function Home ( { allPostsData } ) {
               </Link>
               <br />
               <small className={ utilStyles.lightText }>
-                <Date dateString={ date } />
+                <PostDate dateString={ date } />
               </small>
             </li>
           ) ) }
