@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Date from '../../components/date';
+import PostDate from '../../components/date';
 import Layout from '../../components/Layout';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import utilStyles from '../../styles/utils.module.css';
@@ -35,7 +35,7 @@ export default function Post ( { postData } ) {
           { postData.title }
         </h1>
         <div className={ utilStyles.lightText }>
-          <Date datestring={ postData.date } />
+          <PostDate datestring={ postData.date } />
         </div>
 
         <div dangerouslySetInnerHTML={ { __html: postData.contentHtml } }></div>
