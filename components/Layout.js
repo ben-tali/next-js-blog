@@ -28,7 +28,7 @@ export default function Layout ( { children, home } ) {
     <header className={ styles.header }>
       { home ? (
         <Fragment>
-          <img src="https://i.postimg.cc/R0KnNpwn/myPic.png" alt={ name }
+          <img src="/profile.jpg" alt={ name }
             className={ `${ styles.headerHomeImage } ${ utilStyles.borderCircle }` }
           />
           <h1 className={ utilStyles.heading2X1 }>{ name }</h1>
@@ -37,7 +37,7 @@ export default function Layout ( { children, home } ) {
           <Fragment>
             <Link href="/">
               <a>
-                <img src="https://i.postimg.cc/R0KnNpwn/myPic.png" alt={ name }
+                <img src="/profile.jpg" alt={ name }
                   className={ `${ styles.headerImage } ${ utilStyles.borderCircle }` }
                 />
               </a>
